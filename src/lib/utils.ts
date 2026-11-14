@@ -1,0 +1,10 @@
+import ar from "@/i18n/ar.json";
+import fr from "@/i18n/fr.json";
+import en from "@/i18n/en.json";
+const dict: Record<string, Record<string, string>> = { ar, fr, en };
+export type Locale = "ar" | "fr" | "en";
+export type Key = keyof typeof ar;
+export const t = (key: Key, locale: Locale = "ar") => dict[locale][key] ?? ar[key];
+export const imgSrc = (i: string) => (i.startsWith("http") ? i : `/assets/${i}`);
+const REG: Record<string, Key> = { "سوس": "r_souss", "الأطلس": "r_atlas", "الريف": "r_rif", "الجنوب الشرقي": "r_se" };
+export const regionLabel = (r: string, l: Locale) => (REG[r] ? t(REG[r], l) : r);
