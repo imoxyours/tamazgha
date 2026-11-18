@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-export default function CultureImage({ src }: { src: string }) {
+export default function CultureImage({ src, alt = "" }: { src: string; alt?: string }) {
   const ref = useRef<HTMLImageElement>(null);
   const [failed, setFailed] = useState(false);
   useEffect(() => {
@@ -12,7 +12,7 @@ export default function CultureImage({ src }: { src: string }) {
       {failed ? (
         <span className="absolute inset-0 flex items-center justify-center p-4 text-center text-base text-muted">ضع صورتك هنا</span>
       ) : (
-        <img ref={ref} src={src} alt="" width={1200} height={900} loading="lazy" onError={() => setFailed(true)} className="h-full w-full object-cover" />
+        <img ref={ref} src={src} alt={alt} width={1200} height={900} loading="lazy" onError={() => setFailed(true)} className="h-full w-full object-cover" />
       )}
     </div>
   );

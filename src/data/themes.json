@@ -1,13 +1,9 @@
 [
  {
   "title": "ⵜⴰⵎⴰⵣⵉⵖⵜ",
-  "name": {
-   "ar": "اللغة",
-   "fr": "Langue",
-   "en": "Language"
-  },
+  "name": { "ar": "اللغة", "fr": "Langue", "en": "Language" },
   "text": {
-   "ar": "الأمازيغية لغة رسمية بالمغرب، وكتكتب بحرف تيفيناغ.",
+   "ar": "الأمازيغية لغة رسمية في المغرب، وتُكتب بحرف تيفيناغ.",
    "fr": "L'amazighe est langue officielle du Maroc, écrite en tifinagh.",
    "en": "Amazigh is an official language of Morocco, written in Tifinagh."
   },
@@ -15,13 +11,9 @@
  },
  {
   "title": "ⵜⴰⵡⵔⵉⵅⵜ",
-  "name": {
-   "ar": "التاريخ",
-   "fr": "Histoire",
-   "en": "History"
-  },
+  "name": { "ar": "التاريخ", "fr": "Histoire", "en": "History" },
   "text": {
-   "ar": "من الممالك القديمة لدول المرابطين والموحدين.",
+   "ar": "من الممالك القديمة إلى دولتي المرابطين والموحدين.",
    "fr": "Des royaumes antiques aux dynasties almoravide et almohade.",
    "en": "From ancient kingdoms to the Almoravid and Almohad dynasties."
   },
@@ -29,13 +21,9 @@
  },
  {
   "title": "ⴰⵃⵡⴰⵛ",
-  "name": {
-   "ar": "الموسيقى",
-   "fr": "Musique",
-   "en": "Music"
-  },
+  "name": { "ar": "الموسيقى", "fr": "Musique", "en": "Music" },
   "text": {
-   "ar": "أحواش وأحيدوس والرباب، إيقاعات جماعية كتحكي الحياة.",
+   "ar": "أحواش وأحيدوس والرباب، إيقاعات جماعية تروي تفاصيل الحياة.",
    "fr": "Ahwash, Ahidous et rebab : des rythmes collectifs qui racontent la vie.",
    "en": "Ahwash, Ahidous and the rebab: collective rhythms that tell life's story."
   },
@@ -43,13 +31,9 @@
  },
  {
   "title": "ⴰⵖⵔⵓⵎ",
-  "name": {
-   "ar": "الأكل",
-   "fr": "Cuisine",
-   "en": "Food"
-  },
+  "name": { "ar": "الأكل", "fr": "Cuisine", "en": "Food" },
   "text": {
-   "ar": "الطاجين والكسكس وأملو وزيت أركان على مائدة وحدة.",
+   "ar": "الطاجين والكسكس وأملو وزيت أركان على مائدة واحدة.",
    "fr": "Tajine, couscous, amlou et huile d'argan sur une même table.",
    "en": "Tagine, couscous, amlou and argan oil on one table."
   },
@@ -57,13 +41,9 @@
  },
  {
   "title": "ⵜⴰⵙⵓⵜⵜ",
-  "name": {
-   "ar": "الحرف",
-   "fr": "Artisanat",
-   "en": "Crafts"
-  },
+  "name": { "ar": "الحرف", "fr": "Artisanat", "en": "Crafts" },
   "text": {
-   "ar": "الزرابي والفضة والفخار، حرف كتتوارث بين الأجيال.",
+   "ar": "الزرابي والفضة والفخار، حرف تتوارثها الأجيال.",
    "fr": "Tapis, argent et poterie : des savoir-faire transmis de génération en génération.",
    "en": "Rugs, silver and pottery: crafts passed down through generations."
   },
@@ -71,13 +51,9 @@
  },
  {
   "title": "ⵉⵏⵏⴰⵢⵔ",
-  "name": {
-   "ar": "يناير",
-   "fr": "Yennayer",
-   "en": "Yennayer"
-  },
+  "name": { "ar": "يناير", "fr": "Yennayer", "en": "Yennayer" },
   "text": {
-   "ar": "رأس السنة الأمازيغية، كتحتافل بالأرض والخير.",
+   "ar": "رأس السنة الأمازيغية، احتفال بالأرض والخير.",
    "fr": "Le nouvel an amazigh, célébration de la terre et de l'abondance.",
    "en": "The Amazigh new year, a celebration of the land and abundance."
   },
