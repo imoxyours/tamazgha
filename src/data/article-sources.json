@@ -1,0 +1,33 @@
+{
+ "yennayer": [
+  { "name": "بلاغ الديوان الملكي (3 ماي 2023) كما نقلته وكالة المغرب العربي للأنباء ومنابر إعلامية مغربية" },
+  { "name": "موقع TelQuel" },
+  { "name": "موقع Medias24" },
+  { "name": "موقع Morocco World News" },
+  { "name": "موقع Yabiladi (حديث مع باحث في التقويم الأمازيغي)" },
+  { "name": "موقع Middle East Eye" },
+  { "name": "موقع Office Holidays (لمعلومات العطل الرسمية)" }
+ ],
+ "tifinagh": [
+  { "name": "مجلة Tamazgha Studies Journal (مقالان أكاديميان عن تيفيناغ وحضوره في الفضاء العام)" },
+  { "name": "وثيقة نظام كتابة تيفيناغ الجديد بالحرف اللاتيني الصادرة عن BGN/PCGN (الحكومة البريطانية) سنة 2022" },
+  { "name": "وثيقة كونسورتيوم يونيكود عن ترميز تيفيناغ", "url": "https://www.unicode.org/charts/PDF/U2D30.pdf" },
+  { "name": "صفحات ريتشارد إيشيدا (W3C) عن نظم الكتابة", "url": "https://r12a.github.io/scripts/tifinagh/" },
+  { "name": "موسوعة ويكيبيديا (مقال تيفيناغ)", "url": "https://en.wikipedia.org/wiki/Tifinagh" },
+  { "name": "موسوعة ويكيبيديا (مقال الخط الليبي البربري)", "url": "https://en.wikipedia.org/wiki/Libyco-Berber_alphabet" },
+  { "name": "مدونة The Language Closet" }
+ ],
+ "ahidous": [
+  { "name": "Abdelkader Aoudjit، «من أعالي الأطلس: لمحة عن الشعر التقليدي بالأمازيغية»، مقال أكاديمي منشور على منصة Cambridge Core" },
+  { "name": "موقع Morocco World News (مقال عن أحواش)" },
+  { "name": "موسوعة ويكيبيديا (مقال أحيدوس)" },
+  { "name": "موسوعة ويكيبيديا (مقال موسيقى المغرب)", "url": "https://en.wikipedia.org/wiki/Music_of_Morocco" },
+  { "name": "موقع Sudestmaroc (مقالات عن الموسيقى الأمازيغية والرُّوَّايس)" }
+ ],
+ "silver-tiznit": [
+  { "name": "مقال متحف المتروبوليتان للفنون عن الحلي الأمازيغية في المغرب والجزائر" },
+  { "name": "موقع Morocco World News (قسم نمط الحياة) عن تزنيت وصياغة الفضة" },
+  { "name": "موقع Eurasia Review (تحليل عن التعايش في مدينة تزنيت وصاغة الفضة)" },
+  { "name": "أدلة سفر ومواقع سياحية عن تزنيت وسوق الصاغة" }
+ ]
+}

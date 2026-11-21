@@ -15,8 +15,8 @@ export default function ArticleCard({ a }: { a: Article }) {
       <div className="flex flex-1 flex-col p-6">
         <p className="mb-2 text-sm text-clay">{regionLabel(a.region, l)}</p>
         <h3 dir="auto" className="mb-2 text-xl">{a.title}</h3>
-        <p dir="auto" className="mb-4 flex-1 text-base text-muted">{a.excerpt}</p>
-        <div><Link href={`/articles/${a.slug}`} className="btn-gold">{t("read_more", l)}</Link></div>
+        <p dir="auto" className="mb-6 flex-1 text-base text-muted">{a.excerpt}</p>
+        <div><Link href={`/articles/${a.slug}`} className="btn-gold" aria-label={`${t("read_more", l)}: ${a.title}`}>{t("read_more", l)}</Link></div>
       </div>
     </li>
   );

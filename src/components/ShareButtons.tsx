@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import { Check } from "lucide-react";
 function legacyCopy(text: string): boolean {
   const ta = document.createElement("textarea");
   ta.value = text;
@@ -24,7 +25,7 @@ export default function ShareButtons({ title }: { title: string }) {
     if (!ok) return;
     setCopied(true);
     if (timer.current) clearTimeout(timer.current);
-    timer.current = setTimeout(() => setCopied(false), 2500);
+    timer.current = setTimeout(() => setCopied(false), 2000);
   }
   function whatsapp() {
     const text = `${title} ${window.location.href}`;
@@ -32,9 +33,11 @@ export default function ShareButtons({ title }: { title: string }) {
   }
   return (
     <div className="flex flex-wrap items-center gap-4">
-      <button type="button" onClick={copy} className="btn-gold">نسخ الرابط</button>
-      <button type="button" onClick={whatsapp} className="btn-gold">مشاركة على واتساب</button>
-      <span role="status" aria-live="polite" className="text-base text-primary">{copied ? "تم النسخ بنجاح" : ""}</span>
+      <button type="button" onClick={copy} aria-label="نسخ رابط المقال" className="btn-outline">
+        {copied ? (<><Check size={20} aria-hidden /> تم النسخ</>) : "نسخ الرابط"}
+      </button>
+      <button type="button" onClick={whatsapp} aria-label="مشاركة المقال على واتساب" className="btn-gold">مشاركة على واتساب</button>
+      <span role="status" aria-live="polite" className="sr-only">{copied ? "تم النسخ بنجاح" : ""}</span>
     </div>
   );
 }

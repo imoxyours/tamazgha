@@ -16,3 +16,4 @@ export async function send(_: State, f: FormData): Promise<State> {
   } catch { console.error("contact send failed"); return { ok: false, error: "send", v }; }
   return { ok: true };
 }
+export const submit = send;

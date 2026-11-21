@@ -4,13 +4,15 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Motion from "@/components/Motion";
 import CookieBanner from "@/components/CookieBanner";
+import BackToTop from "@/components/BackToTop";
 import { LocaleProvider } from "@/components/LocaleProvider";
 import { getLocale, getPath } from "@/lib/locale";
 import { SITE_URL } from "@/lib/site";
 import { t } from "@/lib/utils";
+import { u } from "@/i18n/ui";
 import "./globals.css";
-const arabic = Noto_Naskh_Arabic({ subsets: ["arabic"], variable: "--font-arabic" });
-const tifinagh = Noto_Sans_Tifinagh({ subsets: ["tifinagh"], weight: "400", variable: "--font-tifinagh" });
+const arabic = Noto_Naskh_Arabic({ subsets: ["arabic"], variable: "--font-arabic", display: "swap", preload: true });
+const tifinagh = Noto_Sans_Tifinagh({ subsets: ["tifinagh"], weight: "400", variable: "--font-tifinagh", display: "swap", preload: false });
 export async function generateMetadata(): Promise<Metadata> {
   const l = await getLocale(), p = await getPath();
   const loc = (c: string) => (c === "ar" ? p : `/${c}${p === "/" ? "" : p}`);
@@ -25,7 +27,15 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   return (
     <html lang={l} dir={l === "ar" ? "rtl" : "ltr"} suppressHydrationWarning>
       <body className={`${arabic.variable} ${tifinagh.variable}`} suppressHydrationWarning>
-        <LocaleProvider value={l}><Header /><main>{children}</main><Footer /><Motion /><CookieBanner /></LocaleProvider>
+        <LocaleProvider value={l}>
+          <a href="#main" className="skip-link">{u("skip_to_content", l)}</a>
+          <Header />
+          <main id="main" tabIndex={-1}>{children}</main>
+          <Footer />
+          <Motion />
+          <CookieBanner />
+          <BackToTop />
+        </LocaleProvider>
       </body>
     </html>
   );

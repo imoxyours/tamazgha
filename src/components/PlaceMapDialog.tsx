@@ -24,10 +24,10 @@ export default function PlaceMapDialog({ name, region, description }: { name: st
         <div className="p-6">
           <div className="mb-4 flex items-start justify-between gap-4">
             <div>
-              <p className="mb-1 text-sm text-clay">{region}</p>
+              <p className="mb-1 text-base text-clay">{region}</p>
               <h2 id="place-dialog-title" className="text-2xl">{name}</h2>
             </div>
-            <button type="button" onClick={close} aria-label="إغلاق النافذة" className="inline-flex shrink-0 items-center gap-1 rounded-xl border border-line px-3 py-2 text-base">
+            <button type="button" onClick={close} aria-label="إغلاق النافذة" className="btn-outline shrink-0">
               <X size={20} aria-hidden /> إغلاق
             </button>
           </div>

@@ -19,9 +19,9 @@ export default function Motion() {
   useEffect(() => {
     if (reduced()) return;
     const ctx = gsap.context(() => {
-      gsap.from("[data-hero]", { y: 24, opacity: 0, duration: 0.6, ease: "power3.out", stagger: 0.06 });
+      gsap.from("[data-hero]", { y: 24, opacity: 0, duration: 0.6, ease: "power3.out", stagger: 0.06, clearProps: "transform,opacity" });
       ScrollTrigger.batch("[data-reveal]", { start: "top 90%", once: true,
-        onEnter: (els) => gsap.from(els, { y: 12, opacity: 0, duration: 0.3, ease: "power3.out", stagger: 0.05, overwrite: true }) });
+        onEnter: (els) => gsap.from(els, { y: 12, opacity: 0, duration: 0.3, ease: "power3.out", stagger: 0.05, overwrite: true, clearProps: "transform,opacity" }) });
     });
     return () => ctx.revert();
   }, [path]);
